@@ -1,0 +1,21 @@
+.Login_header {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.Login_header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .Login_header {
+    height: 300px;
+  }
+}
+@media (min-width: 320px) {
+  .Login_header {
+    height: 200px;
+  }
+}

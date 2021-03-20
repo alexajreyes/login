@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+#root {
+  font-family: 'Roboto', sans-serif;
+}
+.main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  top: -100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: relative;
+}
+.container-form {
+  width: 706px;
+  height: 400px;
+  left: 656px;
+  top: 268px;
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  margin: 0 auto;
+}
+.place-example {
+  width: 270px;
+}
+.place-example img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.form-main {
+  background: #0077b6;
+  border-radius: 10px;
+}
+.form-main h3 {
+  text-align: center;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  color: #caf0f8;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+  top: -25px;
+  left: 0;
+  position: relative;
+}
+
+.form-control {
+  width: 95%;
+  padding: 0 10px;
+  margin: 10px 0;
+  background: #c4c4c4;
+  color: #242121;
+  font-family: 'Roboto', sans-serif;
+}
+.btn {
+  width: 95%;
+  padding: 0 10px;
+  margin: 20px 0;
+  background: #ade8f4;
+  height: 40px;
+  font-size: 24px;
+  color: #242121;
+}
+.icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: -10px;
+}
+.icons a {
+  color: #242121;
+  border-top: 1px solid;
+  width: 95%;
+  text-align: center;
+}
+.icons span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 16px;
+}
+/*media queries*/
+@media (max-width: 768px) {
+  .main {
+    top: -50px;
+  }
+  .container-form {
+    width: 706px;
+    height: 400px;
+    left: 656px;
+    top: 268px;
+    margin: 0 auto;
+    display: flex;
+  }
+  .form-main {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .place-example {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    top: 25px;
+  }
+  .form-main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .place-example {
+    display: none;
+  }
+  .icons span {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
